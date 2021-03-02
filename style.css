@@ -97,6 +97,37 @@ header nav > ul > li > a > span{
 nav > ul > li > a:hover {
   color: black;
 }
+
+.dropdown {
+  position: relative;
+}
+.dropdown a {
+ white-space: nowrap;
+}
+
+.dropdown-content {
+  background-color: #2d55aa;
+  position: absolute;
+  top: 0;
+
+  width: fit-content;
+  display: none;
+  box-shadow: 5px 5px 9px 0px rgba(0,0,0,0.5);
+  border-left: solid white 1px;
+}
+
+.logo{
+	border: solid;
+    width: 142px;
+    height: 93px;
+    position: absolute;
+    float: left;
+}
+.logo >a {
+	background-image: url(images/paz_logo.png);
+    width: 142px;
+	height: 93px;
+}
 /* nav > ul > li:last-child {
   flex-grow: 1;
   display: flex;
