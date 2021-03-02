@@ -157,18 +157,6 @@ text-align: right;
 	display: block;
 }
 
-  
-  
-
-
-
-
-
-
-
-
-
-
   body{
       margin: 0px;
 	  font-family: 'Arial (Hebrew)', Arial;
@@ -293,6 +281,8 @@ text-align: right;
       padding-top: 20px;
       height: 150px;
   }
+  
+  
   footer{
       display: flex;
       justify-content: space-around; 
@@ -300,5 +290,49 @@ text-align: right;
       width: 100%;
 	  position: fixed;
 	  bottom: 0px;
-	  background: url(images/footer_bg.png) 
+	  background: url(images/footer_bg.png) ;
+	  direction: rtl;
   }
+  footer > nav  {
+	width: 900px;
+    height: 100%;
+}
+  
+  footer > nav > ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+footer > nav > ul > li {
+}
+
+
+footer > nav > ul > li:first-child > a{
+	position: relative;
+    bottom: 2px;
+    width: 18px;
+    height: 18px;
+    background: url(images/fb_icon.png) no-repeat 0 0;
+}
+
+
+footer > nav > ul > li:last-child > a {
+	color: red;
+}
+footer > nav > ul > li > a { 
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  font-size: 14px;  
+  white-space: nowrap;	
+}
+
+footer >nav > ul > li > a:hover {
+  background-color: black;
+}
+.footer_sep_ver{
+	margin: 0 5px;
+	color: white;
+}
+
