@@ -128,18 +128,26 @@ text-align: right;
  white-space: nowrap;
    color: white;
 }
-.logo{
-	border: solid;
-    width: 142px;
+
+.logo  {
+	display: flex;
+    justify-content: flex-end;
+    width: 900px;
+	position: absolute;
+	
+}
+.logo > a {
+	position: relative;
+    bottom: -31px;
+    right: -8px;
+
+}
+
+#img_logo{
+	width: 142px;
     height: 93px;
-    position: absolute;
-    float: left;
 }
-.logo >a {
-	background-image: url(images/paz_logo.png);
-    width: 142px;
-	height: 93px;
-}
+
 /* nav > ul > li:last-child {
   flex-grow: 1;
   display: flex;
