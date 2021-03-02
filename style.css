@@ -1,13 +1,10 @@
 /* Add your styles here */
-@font-face {
-    font-family: 'Rubik', sans-serif;
-    src: url(sansation_light.woff);
-  }
+
   header{
       text-align: center;
       height: 105px;
 	  background-image: url(images/header_bg.png);
-    width: 100%;
+      width: 100%;
 } 
 
   .header_conteiner{
@@ -16,6 +13,36 @@
     height: 105px;
     margin: 0 auto;
 }	
+
+.search{
+	display: flex;
+	padding-top: 20px;
+    padding-left: 10px;
+}
+.languege {
+	font-size: 12px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    padding-left: 20px;
+    padding-top: 5px;
+}
+
+   #img_search{
+	height: 19px;
+    width: 19px;
+   }
+   
+   #div_search{
+	   width: 132px;
+	   height: 19px;
+	   background: url(images/search_input.png) no-repeat 0 0;
+   }
+   #div_search >input{
+	   width: 126px;
+		background: transparent;
+		border: 0 none;
+   }
   /*    
   #img_header {
     width: 100%;
@@ -37,6 +64,7 @@
 
   body{
       margin: 0px;
+	  font-family: 'Arial (Hebrew)', Arial;
 }
   }
   main{
