@@ -294,11 +294,11 @@ text-align: right;
       height: 150px;
   }
   footer{
-      border-top: 8px solid #2d55aa;
       display: flex;
-      justify-content: space-around;
-      height: 40px;
-      padding: 5px;
-      font-size: large;
-      background-color: #c0d7eb;
+      justify-content: space-around; 
+      height: 38px;
+      width: 100%;
+	  position: fixed;
+	  bottom: 0px;
+	  background: url(images/footer_bg.png) 
   }
