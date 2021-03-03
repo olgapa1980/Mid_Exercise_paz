@@ -177,6 +177,7 @@ text-align: right;
   main{
 	width: 900px;
     margin: 0 auto;
+	height: 664px;
 }	
   .row {
     display: flex;
@@ -251,13 +252,13 @@ text-align: right;
 	margin-right: 3px;
 }
 
-.text_row > a:hover > span::after, .bottom_row > a:hover > span::before {	
+.text_row > a:hover > span::after, .bottom_row > a:hover > span::before, .bottom_row > div > a:hover span::before {	
 	content: url('images/read_more_blue.png');
 	margin-right: 3px;
 }
  
  
- .text_row > a:hover, .bottom_row > a:hover {
+ .text_row > a:hover, .bottom_row > a:hover, .bottom_row > div >  a:hover {
   color: #005CA0 ;
 }
 
@@ -284,11 +285,28 @@ text-align: right;
 	float: left;
  }
  
- .bottom_row > a > span::before {	
+ .bottom_row > a > span::before, .bottom_row > div > a span::before {	
 	content: url('images/read_more_yellow.png');
 	margin-right: 3px;
 }
-   
+.bottom_row > div {
+	position: absolute;
+    top: 55px;
+    float: right;
+    display: grid;
+    right: 0px;
+    text-align: right;
+	margin-right: 25px;
+	
+	
+	font-size: 13px;
+    
+}
+.bottom_row > div > a{
+	color: #72716d;
+	margin-bottom: 8px;
+}
+
   span > img{
       width: 99%;
       padding-top: 20px;
