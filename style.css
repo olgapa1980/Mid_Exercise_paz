@@ -366,5 +366,133 @@ footer >nav > ul > li > a:hover {
 .footer_sep_ver{
 	margin: 0 5px;
 	color: white;
+	
+	
+	
+	
+	
+	
+	
+	
 }
+/* ---   ----*/
+.contact_row{
+	padding-top: 32px;
+	display: flex;
+}
+
+.col-1{
+	/* width: 292px; */
+	flex-basis:292px
+}
+.col-2{
+	/* width: 440px; */
+	margin-left: 22px;
+	flex-basis:440px;
+}
+.col-3{
+	flex-basis:122px;
+	margin-left: 22px;
+}
+
+.col-2 > div,  .col-2 > p{
+	text-align: right;
+	margin-bottom: 25px;
+}
+.col-2 > div >a,  .col-2 > div >a~span{
+	color: #5c5c5c;
+	font-size: 12px;
+	text-decoration: none;
+}
+.col-2 > div > a:hover {
+  text-decoration: underline;
+  color: #005CA0 ;
+}
+.col-2>div~p
+{
+    font-size: 15px;
+    font-weight: bold;
+    border-bottom: 1px solid #cbcbcb;
+    margin-bottom: 12px;
+    padding-bottom: 4px;
+    color: #72716d;
+}	
+.form{
+	background: url(images/contact_form_bg.png) no-repeat 0 0;
+    width: 347px;
+    min-height: 332px;
+    padding: 12px 18px;
+	float: right;
+}
+.form >p{
+	color: #005ca0;
+    font-weight: bold;
+    font-size: 15px;
+}
+.form >span{
+	display: block;
+    color: #6d6d6d;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 1.2;
+	margin: 5px 0;
+	direction: rtl;
+}
+.form > span:first-child::before {	
+	content: ":";
+}
+
+.input_form {
+    width: 245px;
+    margin: 10px auto 0;
+    color: #72716d;
+    font-size: 12px;
+    direction: rtl;
+    text-align: left;
+}
+.input_form > div{
+	margin-bottom: 5px;
+}
+.input_form > div > label{
+	float: right;
+}
+textarea{
+    color: #6d6d6d;
+    width: 235px;
+    height: 100px;
+    padding: 3px;
+	border: 1px solid #808992;
+}
+ .contact_top_row > nav > ul {  
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  padding: 0;
+  border-top: 1px solid #dedede;
+} 
+ .contact_top_row > nav > ul > li{ 
+	
+	display: block;
+    width: 122px;
+    min-height: 36px;
+	text-align: right;
+}
+
+ .contact_top_row >  nav > ul > li > a {
+	
+    font-size: 13px;
+	line-height: 32px;
+    display: block;
+    width: 123px;
+    height: 36px;
+    background: url(images/side_menu.png) no-repeat 0 0;
+	text-decoration: none;
+}
+
+.contact_top_row >  nav > ul > li > a >span{
+	padding-right: 12px;
+	color: #5c5c5c;
+	
+}
+
 
