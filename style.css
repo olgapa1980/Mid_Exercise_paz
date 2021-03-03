@@ -171,7 +171,7 @@ text-align: right;
   body{
       margin: 0px;
 	  font-family: 'Arial (Hebrew)', Arial;
-
+line-height: 1;
   } 
   
   main{
@@ -180,98 +180,54 @@ text-align: right;
 }	
   .row {
     display: flex;
+	margin-top: 30px;
    
   }
   .col-33 {
     flex-basis: 33.333%;
      
   }
-  
-  
-    
-  /* NavMenu start
-  nav > ul {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-    background-color: #2d55aa;
-    justify-content: center;
+  .topp_row{
+      text-align: center;
+	  width: 293px;
+      height: 355px;
+	  position: relative;
+  }
+  .bottom_row{
+	margin-top: 18px;
+	width: 244px;
+    padding: 0 24px;
+    height: 216px;
   }
   
-  #fist_nav > ul > li > a, .dropdown-content > a {
+ .text_row{
+	position: absolute;
     color: white;
+    background: url(images/hp_tab_text_bg.png) no-repeat 0 0;
+    /*border: solid; */
+    text-align: right;
+    width: 228px;
+    height: 77px;
+    overflow: hidden;
     padding: 10px;
-    display: block;
-    border-bottom: solid white 1px;
-    text-decoration: none;
-    font-size: 14px;
-    text-align: center;
-  }
-  
-  nav > ul > li > a:hover, .dropdown-content > a:hover {
-    background-color: white;
-    color: #2d55aa;
-  }
-  
-  nav > ul > li.active > a {
-    background-color: lightseagreen;
-    color: white;
-  }
-  
-  .dropdown {
-    position: relative;
-  }
-  
-  .dropdown-content {
-    background-color: #2d55aa;
-    position: absolute;
+    left: 38px;
+    bottom: 6px;
+ }
+ .text_row > h4{
+  font-size: 14px;
+    font-weight: bold;
+	margin: 0;
+ }
+ .text_row >p {
+	font-size: 13px;
+    margin-top: 4px;
+ }
+ .overlay{
+ position: absolute;
     top: 0;
-    left: 100%;
-    width: fit-content;
-    display: none;
-    box-shadow: 5px 5px 9px 0px rgba(0,0,0,0.5);
-    border-left: solid white 1px;
-  }
-  
-  .dropdown-content2 {
-      background-color: #2d55aa;
-      position: absolute;
-      top: 43px;
-      left: 100%;
-      width: fit-content;
-      display: none;
-      box-shadow: 5px 5px 9px 0px rgb(0 0 0 / 50%);
-      border-left: solid white 1px;
-  
-  }
-  .dropdown:hover > .dropdown-content {
-    display: block;
-  }
-  
-  nav > ul > li.active > a {
-    background-color: lightseagreen;
-    color: white;
-  }
-  /* NavMenu End*/
-  */
-  #snowman{
-      float: right;
-  }
-  
-  #h3_snowman{
-      text-align: center;
-  }
-  #third_nav{
-      display: block;
-     
-  }
-  
-  #third_nav > div{
-      flex-basis: 50%;
-      height: 50%;
-      text-align: center;
-  }
-  
+    right: 0;
+ }
+  /*
   .col-33>nav > div > img{
 	  position: relative;
     width: 293px;
@@ -286,10 +242,10 @@ text-align: right;
   .col_third_nav > span{
       flex-basis: 50%;
   }
-  .row_third_nav{
-      padding: 20px;
-      text-align: center;
-  }
+  
+  */
+  
+  
   span > img{
       width: 99%;
       padding-top: 20px;
