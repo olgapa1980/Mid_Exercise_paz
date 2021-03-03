@@ -306,7 +306,26 @@ text-align: right;
 	color: #72716d;
 	margin-bottom: 8px;
 }
+#contact_1{
+	font-size: 13px;
+    color: #6d6d6d;
+    width: 248px;
+    top: 22px;
+}
+#contact_2{
+	font-size: 13px;
+    color: #6d6d6d;
+    width: 248px;
+     top: 38px;
+}
+#contact_2> p{ 
+	margin: 0;
+}
 
+#contact_2 > p> a:hover {
+  
+  color: #005CA0 ;
+}
   span > img{
       width: 99%;
       padding-top: 20px;
@@ -382,8 +401,9 @@ footer >nav > ul > li > a:hover {
 }
 
 .col-1{
-	/* width: 292px; */
-	flex-basis:292px
+	
+	flex-basis:292px;
+	margin-top: 45px;
 }
 .col-2{
 	/* width: 440px; */
@@ -500,10 +520,36 @@ textarea{
 	text-decoration: none;
 }
 
+.col-1 > .bottom_row > p:first-child {
+    /* position: relative;
+    height: 34px;
+    right: 4px;
+    line-height: 34px;
+    direction: rtl;
+    color: #005ca0;
+    margin-bottom: 10px; */
+	font-size: 15px;
+    font-weight: bold;
+    color: #005ca0;
+    margin-bottom: 10px;
+}
+
+ .col-1 > .bottom_row > p > div {
+    position: absolute;
+    
+    display: grid;
+    right: 0px;
+    text-align: right;
+    margin-right: 25px;
+    font-size: 13px;
+ }
 .contact_top_row >  nav > ul > li > a >span{
 	padding-right: 12px;
 	color: #5c5c5c;
-	
 }
 
 
+.contact_top_row >  nav > ul > li > a >span:hover {
+  text-decoration: underline;
+  color: #005CA0 ;
+}
