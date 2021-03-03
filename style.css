@@ -212,18 +212,41 @@ line-height: 1;
     padding: 10px;
     left: 38px;
     bottom: 6px;
+	direction: rtl;
  }
  .text_row > h4{
   font-size: 14px;
     font-weight: bold;
 	margin: 0;
  }
- .text_row >p {
+ .text_row > p {
 	font-size: 13px;
     margin-top: 4px;
+	margin-bottom: 0;
  }
+ 
+ .text_row > a{
+    float: left;
+    color: #fff;
+    position: relative;
+    bottom: 4px;
+	font-size: 13px;
+ }
+ .text_row > a > span::after {	
+	content: url('images/read_more_white.png');
+	margin-right: 3px;
+}
+
+.text_row > a:hover > span::after {	
+	content: url('images/read_more_blue.png');
+	margin-right: 3px;
+}
+ 
+ .text_row > a:hover {
+  color: #005CA0 ;
+}
  .overlay{
- position: absolute;
+	position: absolute;
     top: 0;
     right: 0;
  }
@@ -300,7 +323,7 @@ footer > nav > ul > li > a {
 
 footer >nav > ul > li > a:hover {
   text-decoration: underline;
-    color: #005CA0 ;
+  color: #005CA0 ;
 }
 .footer_sep_ver{
 	margin: 0 5px;
