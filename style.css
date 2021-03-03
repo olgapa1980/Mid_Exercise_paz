@@ -169,9 +169,9 @@ text-align: right;
 }
 
   body{
-      margin: 0px;
-	  font-family: 'Arial (Hebrew)', Arial;
-line-height: 1;
+    margin: 0px;
+	font-family: 'Arial (Hebrew)', Arial;
+	line-height: 1;
   } 
   
   main{
@@ -193,12 +193,16 @@ line-height: 1;
       height: 355px;
 	  position: relative;
   }
+ 
   .bottom_row{
 	margin-top: 18px;
 	width: 244px;
     padding: 0 24px;
     height: 216px;
-  }
+    color: #575757;
+	background: url(images/small_cube_bg.png) no-repeat 0 0;
+	position: relative;
+  } 
   
  .text_row{
 	position: absolute;
@@ -214,18 +218,28 @@ line-height: 1;
     bottom: 6px;
 	direction: rtl;
  }
- .text_row > h4{
-  font-size: 14px;
-    font-weight: bold;
-	margin: 0;
- }
+ 
  .text_row > p {
 	font-size: 13px;
     margin-top: 4px;
 	margin-bottom: 0;
+	
+ }
+ .text_row > p:first-child {
+	font-size: 14px;
+    font-weight: bold;
  }
  
+ 
  .text_row > a{
+    float: left;
+    color: #fff;
+    position: relative;
+    bottom: 4px;
+	font-size: 13px;
+ }
+ 
+ .bottom_row > a{
     float: left;
     color: #fff;
     position: relative;
@@ -237,38 +251,44 @@ line-height: 1;
 	margin-right: 3px;
 }
 
-.text_row > a:hover > span::after {	
+.text_row > a:hover > span::after, .bottom_row > a:hover > span::before {	
 	content: url('images/read_more_blue.png');
 	margin-right: 3px;
 }
  
- .text_row > a:hover {
+ 
+ .text_row > a:hover, .bottom_row > a:hover {
   color: #005CA0 ;
 }
+
  .overlay{
 	position: absolute;
     top: 0;
     right: 0;
  }
-  /*
-  .col-33>nav > div > img{
-	  position: relative;
-    width: 293px;
-    height: 355px;
-    float: right;
+ 
+  .bottom_row > p:first-child {
+	position: relative;
+    height: 34px;
+    right: 4px;
+    line-height: 34px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 15px;
+	direction: rtl;
+ }
+ .bottom_row > a{
+    padding-left: 12px;
+	color: #72716d;
+	font-size: 13px;
+	float: left;
+ }
+ 
+ .bottom_row > a > span::before {	
+	content: url('images/read_more_yellow.png');
+	margin-right: 3px;
 }
-  }
-  .col_third_nav{
-      display: flex;
-      flex-basis: 50%;
-  }
-  .col_third_nav > span{
-      flex-basis: 50%;
-  }
-  
-  */
-  
-  
+   
   span > img{
       width: 99%;
       padding-top: 20px;
