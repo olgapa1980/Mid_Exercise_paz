@@ -428,6 +428,7 @@ footer >nav > ul > li > a:hover {
 	color: #005ca0;
     font-weight: bold;
     font-size: 15px;
+	margin: 0;
 }
 .form >span{
 	display: block;
@@ -456,6 +457,16 @@ footer >nav > ul > li > a:hover {
 .input_form > div > label{
 	float: right;
 }
+
+button{
+	font-size: 14px;
+    color: #fff;
+    background: url(images/button_blue.png) repeat-x 0 0;
+    line-height: 21px;
+    padding: 0 4px;
+    border: none;
+}
+
 textarea{
     color: #6d6d6d;
     width: 235px;
