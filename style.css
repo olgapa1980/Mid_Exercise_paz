@@ -9,7 +9,6 @@
 
   .header_conteiner{
 	width: 900px;
-   
     height: 105px;
     margin: 0 auto;
 }	
@@ -99,8 +98,12 @@ header nav > ul > li > a > span{
     height: 4px;
 }
 
-nav > ul > li > a:hover,  .dropdown-content > a:hover{
-  color: blue;
+header nav > ul > li :hover,  .dropdown-content > a:hover{
+  text-decoration: underline !important;
+  color: #005CA0 !important;
+}
+header nav > ul > li > a > span:hover,  .dropdown-content > a > span:hover{
+text-decoration: underline;
 }
 
 .dropdown {
@@ -112,7 +115,7 @@ nav > ul > li > a:hover,  .dropdown-content > a:hover{
  text-decoration: none;
 
 }
-
+/*
 .dropdown-content {
 text-align: right;
   position: inherit;
@@ -124,6 +127,19 @@ text-align: right;
   right: 10px;
   
 }
+
+*/
+.dropdown-content{
+text-align: right;
+    position: absolute;
+    
+    display: none;
+    box-shadow: 5px 5px 9px 0px rgb(0 0 0 / 50%);
+    background: #909090;
+    padding-top: 18px;
+    right: 0;
+}
+
 .dropdown-content  a {
  white-space: nowrap;
    color: white;
@@ -148,39 +164,30 @@ text-align: right;
     height: 93px;
 }
 
-/* nav > ul > li:last-child {
-  flex-grow: 1;
-  display: flex;
-  justify-content: flex-end;
-  } */
-  .dropdown:hover > .dropdown-content {
+.dropdown:hover > .dropdown-content {
 	display: block;
 }
 
   body{
       margin: 0px;
 	  font-family: 'Arial (Hebrew)', Arial;
-}
-  }
+
+  } 
+  
   main{
-    height: 600px;
-  }
+	width: 900px;
+    margin: 0 auto;
+}	
   .row {
     display: flex;
    
   }
-  .col-25 {
-    flex-basis: 25%;
-      height: 600px;
+  .col-33 {
+    flex-basis: 33.333%;
+     
   }
   
-  div[class^="col-37"] {
-    flex-basis: 37.5%;
-    height: 600px;
-  }
-  .col-37_first > nav{
-        padding: 20px;
-  }
+  
     
   /* NavMenu start
   nav > ul {
@@ -256,7 +263,7 @@ text-align: right;
   }
   #third_nav{
       display: block;
-      height: 600px;
+     
   }
   
   #third_nav > div{
@@ -265,6 +272,13 @@ text-align: right;
       text-align: center;
   }
   
+  .col-33>nav > div > img{
+	  position: relative;
+    width: 293px;
+    height: 355px;
+    float: right;
+}
+  }
   .col_third_nav{
       display: flex;
       flex-basis: 50%;
@@ -329,7 +343,8 @@ footer > nav > ul > li > a {
 }
 
 footer >nav > ul > li > a:hover {
-  background-color: black;
+  text-decoration: underline;
+    color: #005CA0 ;
 }
 .footer_sep_ver{
 	margin: 0 5px;
